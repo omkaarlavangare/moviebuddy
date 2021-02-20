@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recommendations</title>
+    <link rel="shortcut icon" type="image/jpg" href="/static/recpg.ico">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <div class="container">
+      <nav class="navbar navbar-light bg-light">
+        <h3><a style="color:rgb(255, 140, 0)" class="nav-link" href="{{url_for('home')}}">Home</a></h3>
+      </nav>
+    </div>
+    <br>
+    {% if t == "s" and col == "s" %}
+      <div class="shadow p-3 mb-5 bg-white rounded">
+        <h3 style="color:rgb(0, 0, 0)">Sorry! This movie might not be in our database.</h3>
+        <h3 style="color:rgb(0, 0, 0)">Please check if you spelled it correct.</h3>
+        <h3 style="color:rgb(0, 0, 0)">Or try with another movie.</h3>
+      </div>
+
+    {% elif t == "l" and col == "s" %}
+    
+    <div class="shadow p-3 mb-5 bg-white rounded">
+        <h3 style="color:rgb(0, 0, 0)">Movies With Same Content As Per {{movie}} :</h3>
+        
+    </div>
+
+    <ul class="list-group list-group-flush">
+          {% for m in r %}
+            <li class="list-group-item" style="color:rgb(255, 140, 0)"><strong>{{m|capitalize}}</strong></li>
+          {% endfor %}
+      </ul>
+
+    {% elif t == "s" and col == "l" %}
+
+    <div class="shadow p-3 mb-5 bg-white rounded">
+        <h3 style="color:rgb(0, 0, 0)">Users Who Watched {{movie}} Also Viewed :</h3>
+    </div>
+
+    <ul class="list-group list-group-flush">
+          {% for m in n %}
+            <li class="list-group-item" style="color:rgb(255, 140, 0)"><strong>{{m|capitalize}}</strong></li>
+          {% endfor %}
+        </ul>
+
+    {% else %}
+    <div class="shadow p-3 mb-5 bg-white rounded">
+        <h3 style="color:rgb(0, 0, 0)">Movies With Same Content As Per {{movie}} :</h3>
+        
+      </div>
+      <ul class="list-group list-group-flush">
+          {% for m in r %}
+            <li class="list-group-item" style="color:rgb(255, 140, 0)"><strong>{{m|capitalize}}</strong></li>
+          {% endfor %}
+      </ul>
+      <div class="shadow p-3 mb-5 bg-white rounded">
+        <h3 style="color:rgb(0, 0, 0)">Users Who Watched {{movie}} Also Viewed :</h3>
+      </div>
+
+      <ul class="list-group list-group-flush">
+          {% for m in n %}
+            <li class="list-group-item" style="color:rgb(255, 140, 0)"><strong>{{m|capitalize}}</strong></li>
+          {% endfor %}
+        </ul>
+    {% endif %}
+    <footer style="text-align: bottom;float: right;margin: 0px 50px 0px 0px">
+    Made with <span style="color: #e25555;">&#9829;</span> By Omkaar
+    </footer>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+  </body>
+</html>
