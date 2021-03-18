@@ -4,8 +4,8 @@ Movie Buddy recommends movies with similar content and the movies which are rate
 
 I have used Content-Based Filtering and Collaborative Item-Item Based Filtering.<br>
 I have downloaded the datasets from kaggle:<br>
-https://www.kaggle.com/juzershakir/tmdb-movies-dataset- For Content Based Filtering.
-https://www.kaggle.com/grouplens/movielens-20m-dataset?select=rating.csv- For Collaborative Filtering<br>
+https://www.kaggle.com/juzershakir/tmdb-movies-dataset - For Content Based Filtering.
+https://www.kaggle.com/grouplens/movielens-20m-dataset - For Collaborative Filtering<br>
 
 ## Movie Buddy uses Count Vectorizer and Cosine Similarity for Content Based Filtering<br>
 ### Count Vectorizer:<br>
