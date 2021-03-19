@@ -22,3 +22,5 @@ Above image is from:https://www.oreilly.com/library/view/statistics-for-machine/
 ## Movie Buddy Uses NearestNeighbors model for Collaborative Filtering<br>
 Here i have used NearestNeighbors model from sklearn library for Unsupervised learning.https://scikit-learn.org/stable/modules/neighbors.html<br>
 I have used Brute-Force algorithm.https://scikit-learn.org/stable/modules/neighbors.html#nearest-neighbor-algorithms<br>
+
+App - link: https://movie-buddy-rec.herokuapp.com/ (app currently not working online due to memory limitations by Heroku, but I have uploaded a sample video here: https://www.linkedin.com/posts/omkaar-lavangare-316209200_recommendersystems-machinelearning-datascience-activity-6777314685072019456-tGIH click the link if you want to see its full working)
