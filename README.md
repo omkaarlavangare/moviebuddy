@@ -23,4 +23,11 @@ Above image is from:https://www.oreilly.com/library/view/statistics-for-machine/
 Here i have used NearestNeighbors model from sklearn library for Unsupervised learning.https://scikit-learn.org/stable/modules/neighbors.html<br>
 I have used Brute-Force algorithm.https://scikit-learn.org/stable/modules/neighbors.html#nearest-neighbor-algorithms<br>
 
-App - link: https://movie-buddy-rec.herokuapp.com/ (app currently not working online due to memory limitations by Heroku, but I have uploaded a sample video here: https://www.linkedin.com/posts/omkaar-lavangare-316209200_recommendersystems-machinelearning-datascience-activity-6777314685072019456-tGIH click the link if you want to see its full working)
+App - link: https://movie-buddy-rec.herokuapp.com/ (App gets restricted to generate recommendations due to memory limitations by Heroku)
+
+Here is a video of its full working on localhost:
+
+
+https://user-images.githubusercontent.com/79354858/150300316-6170a527-048a-4871-967e-922630f338e4.mp4
+
+
